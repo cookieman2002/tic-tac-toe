@@ -80,7 +80,7 @@ function App() {
   };
 
   return (
-    <div className="max-w-md mx-auto mt-10 p-4 bg-gray-200 rounded">
+    <div className="max-w-md mx-auto mt-10 p-4 text-white bg-gray-700/50 rounded-xl">
       <div className="text-center font-bold text-2xl mb-4">
         {winner
           ? `Winner: ${winner === player1.symbol ? player1.name : player2.name}`
@@ -121,14 +121,17 @@ function App() {
           />
         </label>
       </div>
+        
       <button
-        className="mt-4 p-2 bg-blue-500 text-white rounded hover:bg-blue-700"
+        className="resetButton"
         onClick={resetGame}
       >
+        <span>
         Reset Game
+        </span>
       </button>
     </div>
-  );
-}
-
+    );
+  }
+  /* // mt-4 p-2 bg-blue-500 text-white rounded hover:bg-blue-700 */
 export default App;
